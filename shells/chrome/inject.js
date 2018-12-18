@@ -13,9 +13,12 @@ function messageIfFound(window) {
     try {
         // Determine if the page is truly a GitHub page. Use their
         // feature detection to detect them :)
-        require('github/feature-detection');
+        // require('github/feature-detection');
+        console.log("Sending...")
         window.postMessage({ installLivePreview: true }, '*');
-    } catch(err) {}
+    } catch(err) {
+        console.log(err)
+    }
 }
 
 function runFnInPage(fn) {

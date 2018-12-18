@@ -1,14 +1,11 @@
 {
     "name": "Octo Preview",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Live preview for markdown comments in PRs/Issues on GitHub",
     "manifest_version": 2,
-    "permissions": [
-        "https://github.com",
-        "https://gist.github.com"
-    ],
+    "permissions": ["activeTab"],
     "content_scripts": [{
-        "matches": ["*://*/*"],
+        "matches": ["https://github.com/*", "https://gist.github.com/*"],
         "js": ["inject.js"],
         "run_at": "document_idle"
     }],
