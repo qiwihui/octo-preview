@@ -1,7 +1,12 @@
 {
     "name": "Octo Previewer",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Live preview for markdown comments in PRs/Issues/Gists on GitHub",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+       "128": "icon128.png"
+    },
     "manifest_version": 2,
     "permissions": ["activeTab"],
     "content_scripts": [{

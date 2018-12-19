@@ -9,3 +9,4 @@ rm -rf $CHROME_DIST && mkdir -p $CHROME_DIST
 $BUNDLE $CHROME_DIST/live-preview.js
 cp $CHROME_SHELL/* $CHROME_DIST
 $STYLES > $CHROME_DIST/live-preview.css
+cp src/images/icon*.png $CHROME_DIST/
