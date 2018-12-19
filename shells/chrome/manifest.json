@@ -1,7 +1,7 @@
 {
-    "name": "Octo Preview",
-    "version": "1.0.3",
-    "description": "Live preview for markdown comments in PRs/Issues on GitHub",
+    "name": "Octo Previewer",
+    "version": "1.0.4",
+    "description": "Live preview for markdown comments in PRs/Issues/Gists on GitHub",
     "manifest_version": 2,
     "permissions": ["activeTab"],
     "content_scripts": [{

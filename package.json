@@ -1,12 +1,12 @@
 {
-  "name": "octo-preview",
-  "description": "Live preview for markdown comments in PRs/Issues on GitHub",
+  "name": "octo-previewer",
+  "description": "Live preview for markdown comments in PRs/Issues/Gists on GitHub",
   "scripts": {
-    "build-chrome": "./scripts/build-chrome",
-    "zip": "zip -jr chrome.zip dist/chrome/",
-    "release": "npm run build-chrome && npm run zip && webstore upload --file chrome.zip --auto-publish"
+    "build": "./scripts/build-chrome",
+    "zip": "zip -jr dist/chrome.zip dist/chrome/",
+    "release": "npm run build && npm run zip && webstore upload --file dist/chrome.zip --auto-publish"
   },
-  "author": "Andrew Levine",
+  "author": "qiwihui",
   "devDependencies": {
     "chrome-webstore-upload-cli": "^0.2.0",
     "babel-core": "^6.3.15",
